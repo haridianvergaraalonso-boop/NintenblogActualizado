@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: "Lobster Two", cursive;
+
+  background: radial-gradient(circle at top left, #bb6226, #ccaa62);
+  color: #422207;
+  height: 100vh;
+  display: flex;
+  background-image: url("img/cutepomodoro.jpg");
+
+}
+
+
+.sidebar logo {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 30px;
+
+
+
+}
+
+
+.sidebar {
+  width: 240px;
+  background: rgba(197, 147, 105, 0.9);
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-right: 1px solid rgba(128, 36, 0, 0.973);
+  height: 100vh;
+  position: fixed;
+
+}
+
+
+
+.sidebar a {
+  background: 10px;
+  width: 90%;
+  align-items: center;
+  display: block;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #422207;
+
+}
+
+
+.main-content2 {
+  margin-left: 240px;
+
+  width: calc(100% - 240px);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.toptitlebar {
+  border: 2px solid #e58f4b;
+  border-radius: 12px;
+  padding: 20px 40px;
+  text-align: start;
+  width: fit-content;
+  background: rgba(211, 154, 79, 0.521);
+  position: absolute;
+  top: 0px;
+
+
+}
+
+
+
+.toptitlebar h1 {
+  font-family: "Lobster Two", cursive;
+  color: #5c240a;
+  font-size: 2rem;
+  margin: 0;
+}
+
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  background-image: url("img/autum.jpg");
+  padding: 30px 50px;
+  border-radius: 20px;
+  border: 3px solid #8b4513;
+  box-shadow: 0 0 20px rgb(253, 101, 0);
+}
+
+
+#taskName {
+  font-size: 3rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+
+#value {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #5f270d;
+  padding: 10px 20px;
+  background: rgb(214, 192, 163);
+  border-radius: 10px;
+  border: 2px solid #80461d;
+}
+
+body.crud {
+  font-family: "Lobster Two", cursive;
+  background-image: url("img/thhecrudisdifficulttt.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.crud button {
+  background-color: #ff9864;
+  color: #472308;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+body.crud button:hover {
+  background-color: #f0cbb0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+body.crud button:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid rgba(128, 36, 0, 0.973);
+  }
+
+  .main-content2 {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .toptitlebar {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  #content {
+    width: 90%;
+  }
+
+  #taskName { font-size: 2.2rem; }
+  #value { font-size: 3rem; }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .main-content2 {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+  }
+}
+
+@media (min-width: 991px) {
+}

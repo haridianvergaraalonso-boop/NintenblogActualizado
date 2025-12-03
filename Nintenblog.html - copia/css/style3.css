@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top left, #af9b9b, #000000);
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  background-image: url(img/newbackground.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background: -moz-linear-gradient();
+}
+
+
+
+[class$="_console"] img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.dashboard {
+  display: flex;
+  width: 100%;
+  height: max-content;
+
+}
+
+.sidebar {
+  width: 240px;
+  background: rgba(77, 77, 77, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-right: 1px solid rgb(255, 0, 0);
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-self: flex-start;
+}
+
+.sidebar .logo {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+}
+
+.sidebar .menu a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: 0.3s;
+  margin-top: 10%;
+
+}
+
+.sidebar .menu {
+  margin-top: 100%;
+}
+
+#trying {
+  margin-bottom: 218%;
+}
+
+
+
+.online-section {
+  margin-top: 20px;
+}
+
+.online-section h3 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.online-section ul {
+  list-style: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#consoletitle {
+  align-items: center;
+  transform: translatex(40%);
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.NES_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+  animation: NES_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 0% 5%;
+
+}
+
+@keyframes NES_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.GAMEBOY_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+  animation: gb_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 5% 10%;
+
+}
+
+@keyframes gb_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.SUPERNINTENDO_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+  animation: sn_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 15% 20%;
+
+}
+
+@keyframes sn_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.NINTENDO64_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+  animation: c_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 20% 30%;
+
+}
+
+@keyframes c_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.GAMECUBE_console {
+
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  animation: c_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 30% 40%;
+
+}
+
+@keyframes c_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.GAMEBOYAD_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  animation: c_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 40% 50%;
+
+}
+
+@keyframes c_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.NINTENDODS_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  animation: c_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 50% 60%;
+
+}
+
+@keyframes c_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.WII_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  animation: c_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 60% 70%;
+
+}
+
+@keyframes c_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.NINTENDO3DS_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  animation: c_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 68% 78%;
+
+}
+
+@keyframes c_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.WIIU_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  animation: c_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 75% 85%;
+
+}
+
+@keyframes c_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.NINTENDOS_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  animation: c_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 85% 95%;
+
+}
+
+@keyframes c_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.NINTENDOS2_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+  animation: c_scroll linear both;
+  animation-timeline: scroll();
+  animation-range: 90% 100%;
+
+}
+
+@keyframes c_scroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+@media (max-width: 767px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid red;
+  }
+
+  .top-bar {
+    align-items: center;
+  }
+
+  #consoletitle {
+    transform: translateX(0);
+    text-align: center;
+  }
+
+  .NES_console,
+  .GAMEBOY_console,
+  .SUPERNINTENDO_console,
+  .NINTENDO64_console,
+  .GAMECUBE_console,
+  .GAMEBOYAD_console,
+  .NINTENDODS_console,
+  .WII_console,
+  .NINTENDO3DS_console,
+  .WIIU_console,
+  .NINTENDOS_console,
+  .NINTENDOS2_console {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+
+  .NINTENDO64_console,
+  .GAMECUBE_console,
+  .NINTENDODS_console {
+    width: 75%;
+  }
+}
+
+@media (min-width: 991px) {}
