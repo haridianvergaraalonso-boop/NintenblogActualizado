@@ -1,0 +1,436 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top left, #af9b9b, #000000);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/newbackground.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background: -moz-linear-gradient();
+}
+
+#menu-btn {
+  display: none;
+}
+
+#consoletitle {
+  font-size: 45px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow:
+    0 0 5px #4d4747,
+    0 0 10px #ff1f1f,
+    0 0 20px #ff0000,
+    0 0 40px #8b0000;
+  margin-bottom: 30px;
+}
+
+
+
+[class$="_console"] img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.dashboard {
+ display: flex;
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: rgba(77, 77, 77, 0.9);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-right: 1px solid rgb(255, 0, 0);
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-self: flex-start;
+}
+
+.sidebar .logo {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+}
+
+.sidebar .menu a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: 0.3s;
+  margin-top: auto;
+
+}
+
+.sidebar .menu {
+  margin-top: 100%;
+}
+
+#trying {
+  margin-bottom: 218%;
+}
+
+
+
+.online-section {
+  margin-top: 20px;
+}
+
+.online-section h3 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.online-section ul {
+  list-style: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#consoletitle {
+  align-items: center;
+  transform: translatex(40%);
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nes_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+}
+
+
+
+.gameboy_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+}
+
+
+.supernintendo_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+}
+
+
+.nintendo64_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+}
+
+.gamecube_console {
+
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+}
+
+
+.gameboyad_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+}
+
+
+.nintendods_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+}
+
+
+.wii_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+}
+
+
+.nintendo3ds_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  
+}
+
+.wiiu_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+}
+
+.nintendoS_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+}
+
+.nintendoS2_console {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+
+}
+
+.console-card {
+  background: rgb(95, 84, 84);
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+}
+
+.console-card img {
+  width: 100%;
+  height: auto;   
+  border-radius: 10px;
+  object-fit: cover; 
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+footer {
+  background: rgba(155, 146, 146, 0.95);
+  border-top: 3px solid rgba(255, 12, 12, 0.973);
+  padding: 30px 20px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+
+}
+
+.footer-content {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-motto {
+  font-size: 1.5rem;
+  color: #5c0a0a;
+  font-weight: 600;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: #420707;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #000000;
+  transform: scale(1.2);
+}
+
+.footer-copyright {
+  font-size: 0.95rem;
+  color: #990d0d;
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(128, 36, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+}
+
+
+
+
+@media (max-width: 767px) {
+  body {
+    min-height: auto;
+  }
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 220px;
+    height: 100vh;
+    z-index: 2000;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+
+  #menu-btn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 3000;
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #consoletitle {
+    transform: none;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .console-card {
+    width: 90%;
+  }
+
+
+  .nes_console,
+  .gameboy_console,
+  .supernintendo_console,
+  .nintendo64_console,
+  .gamecube_console,
+  .gameboyad_console,
+  .nintendods_console,
+  .wii_console,
+  .nintendo3ds_console,
+  .wiiu_console,
+  .nintendoS_console,
+  .nintendoS2_console {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+
+  .NINTENDO64_console,
+  .GAMECUBE_console,
+  .NINTENDODS_console {
+    width: 75%;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gestionar Tareas Pomodoro</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body class="crud">
+  <aside class="sidebar">
+    <img class="logo" src="img/logo.png" width="200" height="200" alt="Logo">
+    <h2 class="logo">Nintenblog</h2>
+    <nav class="menu">
+      <a href="index.html">🏠 Menú</a>
+      <a href="indexCRUD.html" class="active">🛠️ Gestionar tareas</a>
+      <a href="indexpomodoro.html">🧘‍♀️ Zona Pomodoro</a>
+    </nav>
+  </aside>
+
+  <main class="main-content2">
+    <header class="toptitlebar">
+      <h1>Gestionar Tareas</h1>
+    </header>
+
+    <section style="margin-top:120px;">
+      <h2>Añadir nueva tarea</h2>
+      <form id="form-nueva">
+        <input id="n-title" type="text" placeholder="Nombre tarea" required>
+        <button type="submit">🍄‍🟫Añadir🍄‍🟫</button>
+      </form>
+
+      <h2 style="margin-top:20px;">Tareas existentes</h2>
+      <ul id="manage-list"></ul>
+      <p id="no-manage" style="display:none">No hay tareas.</p>
+    </section>
+
+
+    <div id="edit-modal"
+      style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.4); align-items:center; justify-content:center;">
+      <div style="background:#fff; padding:1rem; border-radius:8px; min-width:260px;">
+        <h3>Editar tarea</h3>
+        <form id="form-edit">
+          <input type="hidden" id="e-id">
+          <input id="e-title" type="text" required>
+          <div style="margin-top:8px;">
+            <button type="submit">Guardar</button>
+            <button type="button" id="cancel-edit">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="delete-modal" 
+    style="display:none; 
+     position:fixed; 
+     top:0; 
+     left:0; 
+     width:100%; 
+     height:100%;
+     background: rgba(0,0,0,0.5); align-items:center; justify-content:center;">
+      <div style="background:white; padding:20px; border-radius:8px; text-align:center;">
+        <p>¿Borrar esta tarea?</p>
+        <button id="delete-yes">Sí</button>
+        <button id="delete-no">No</button>
+      </div>
+    </div>
+    <script src="js/javascriptgestion.js"></script>
+  </main>
+
+     <footer>
+      <div class="footer-content">
+        <p class="footer-motto">Por fanes, para fanes. Siempre Nintendo 🎮</p>
+
+        <div class="social-links">
+          <a href="#" aria-label="Facebook" title="Facebook">📘</a>
+          <a href="#" aria-label="Twitter" title="Twitter">🐦</a>
+          <a href="#" aria-label="Instagram" title="Instagram">📷</a>
+          <a href="#" aria-label="YouTube" title="YouTube">📺</a>
+          <a href="#" aria-label="Discord" title="Discord">💬</a>
+        </div>
+
+        <p class="footer-copyright">
+          © 2025 Nintenblog - Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
+</body>
+
+</html>
