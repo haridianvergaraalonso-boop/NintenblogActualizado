@@ -13,11 +13,6 @@ That’s why I added a Pomodoro timer, so you can study or focus while hanging o
 The most recent addition to NintenBlog is the Consoles page, where I give a quick overview of the many consoles Nintendo has released throughout its history — from classics to modern favorites! 🧡🕹️
 There’s still more to add, but it’s already a fun little trip down memory lane.
 
-🚧⏳ Work in Progress
-
-Some sections are still under construction due to lack of time 🫠💻 —
-such as the Ranking page and the History page.
-But don’t worry… they will be completed in the future! ✨⏳
 
 🙏💖 Special Thanks
 
@@ -26,5 +21,7 @@ Big thanks to:
 My LND teacher, for all their support 👨‍🏫🌟
 
 The content creators who make amazing informational videos and keep me inspired 🎥💡
+
+My classmates, that helped me with everything. Big big thanks to them 🩷🩷
 
 And finally… my own patience, for surviving endless hours sitting in a chair programming this website 😵‍💫🪑💻
